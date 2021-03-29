@@ -3,6 +3,9 @@ import binascii
 from scapy.all import Packet
 from scapy.all import IntField
 
+PACKETSIZE = 1472
+READ_BUFSIZE = 1456
+
 class PacketHeader(Packet):
     name = "PacketHeader"
     fields_desc = [
